@@ -1,4 +1,4 @@
-run = "npm run start"
+run = "bun run build && bun run start"
 hidden = [".dist", ".config"]
 
 [packager]

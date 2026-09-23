@@ -1,6 +1,7 @@
 { pkgs }: {
   deps = [       
-		pkgs.yarn 
+		pkgs.yarn
+		pkgs.bun
 		pkgs.esbuild    
 		pkgs.nodejs-18_x  
 		pkgs.nodePackages.typescript    

@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: yaman-music-v3
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: DISCORD_TOKEN_1
+        sync: false
+      - key: DATABASE_URL
+        value: file:./lavamusic-pgdata

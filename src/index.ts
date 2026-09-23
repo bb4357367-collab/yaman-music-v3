@@ -6,6 +6,13 @@ import { ThemeSelector } from "./utils/ThemeSelector";
 
 const theme = new ThemeSelector();
 
+if (process.env.PORT) {
+	Bun.serve({
+		port: Number(process.env.PORT),
+		fetch: () => new Response("Lavamusic is running"),
+	});
+}
+
 /**
  * Sets the console window title.
  * @param title - The new title for the console window.
